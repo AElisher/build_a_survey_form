@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">This Is Title</h1>
+      <p id="description">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      </p>
+    </header>
+    <main>
+      <form id="survey-form">
+        <div class="form-group">
+          <label for="name" id="name-label">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Full Name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email" id="email-label">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@mail.com"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="number" id="number-label">Age:</label>
+          <input
+            type="number"
+            id="number"
+            name="age"
+            min="12"
+            max="120"
+            placeholder="12+"
+          />
+        </div>
+        <div class="form-group">
+          <label for="dropdown" id="dropdown-lable"
+            >Programming language you are expert at:</label
+          >
+          <select id="dropdown" name="p_lang" required>
+            <option value="">None</option>
+            <option value="C">C (Programming Language)</option>
+            <option value="Python">Python</option>
+            <option value="C#">C#</option>
+            <option value="php">PHP</option>
+            <option value="Js">Java Script</option>
+            <option value="Go">Go (Programming Language)</option>
+            <option value="ruby">Ruby on rails</option>
+            <option value="C++">C++</option>
+            <option value="Java">Java</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p class="forms_p">Are you a student?</p>
+
+          <label for="radio1"
+            ><input
+              type="radio"
+              id="radio1"
+              name="Status"
+              class="inline"
+              value="yes"
+              checked
+            />
+            Yes</label
+          >
+
+          <label for="radio2"
+            ><input
+              type="radio"
+              id="radio2"
+              name="Status"
+              class="inline"
+              value="no"
+            />
+            No</label
+          >
+
+          <label for="radio3"
+            ><input
+              type="radio"
+              id="radio3"
+              name="Status"
+              class="inline"
+              value="none"
+            />
+            Prefer not to say</label
+          >
+        </div>
+        <div class="form-group">
+          <p class="forms_p">Operating system experience:</p>
+          <label>
+            <input
+              type="checkbox"
+              name="windows"
+              class="inline"
+              value="windw"
+            />
+            I am experienced with Windows-OS</label
+          >
+          <label>
+            <input type="checkbox" name="linux" class="inline" value="Linx" /> I
+            am experienced with Linux-OS</label
+          >
+          <label
+            ><input type="checkbox" name="mac" class="inline" value="mac" /> I
+            am experienced with Mac-OS
+          </label>
+        </div>
+        <div class="form-group">
+          <p class="forms_p">Do you have any suggestion about this survey?</p>
+          <textarea
+            name="suggestions"
+            id="textarea"
+            cols="30"
+            rows="10"
+            placeholder="Please feel free to write a review..."
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
